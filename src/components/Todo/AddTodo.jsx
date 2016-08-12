@@ -15,6 +15,9 @@ export default class AddTodo extends Component {
   handleClick(e) {
     const node = this.refs.input
     const text = node.value.trim()
+    {/*
+      trim() : remove the white space
+    */}
     this.props.onAddClick(text)
     node.value = ''
   }
